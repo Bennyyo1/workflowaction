@@ -1,0 +1,14 @@
+name: Print my txt file
+
+on: workflow_dispatch
+
+jobs:
+  print-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: print file
+      run: cat testfile.txt
